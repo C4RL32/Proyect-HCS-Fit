@@ -1,0 +1,52 @@
+# 📌 Ignorar entorno virtual de Python
+venv/
+env/
+*.pyc
+*.pyo
+*.pyd
+__pycache__/
+db.sqlite3  # Si usas SQLite en desarrollo, no subirlo
+*.sqlite3
+
+# 📌 Ignorar archivos de configuración sensibles
+.env
+.env.example  # Excluir, pero puedes mantener uno de referencia
+
+# 📌 Ignorar dependencias de Python
+pip-log.txt
+pip-wheel-metadata/
+*.egg-info/
+dist/
+build/
+
+# 📌 Ignorar dependencias de Node.js en frontend
+node_modules/
+npm-debug.log
+yarn.lock
+
+# 📌 Ignorar archivos de logs y caché
+*.log
+*.pid
+*.seed
+*.json
+*.lock
+logs/
+cache/
+staticfiles/
+media/  # Si guardas imágenes/videos localmente, evita subirlos
+
+# 📌 Ignorar archivos de IDEs y editores
+.vscode/
+.idea/
+.DS_Store  # Archivos ocultos en macOS
+Thumbs.db  # Archivos de caché en Windows
+
+# 📌 Ignorar archivos de despliegue y contenedores
+*.dockerfile
+*.swp
+*.swo
+
+# 📌 Archivos de migraciones que pueden regenerarse
+*/migrations/*.pyc
+*/migrations/*.py
+!*/migrations/__init__.py  # Mantener el archivo necesario
